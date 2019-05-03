@@ -54,8 +54,8 @@ public class Nodo{
 	/**
 	 * Imprime el contenido del Nodo
 	 */
-	public void visitar(){
-		System.out.print( this.getDato()+"\t" );
+	public String visitar(){
+		return this.getDato()+"\t" ;
 	}
 	/**
 	 * Obtiene el dato del nodo izquierdo

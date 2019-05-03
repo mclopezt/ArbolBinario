@@ -182,37 +182,14 @@ public class Arbol {
 
 		return 0;
 	}
-
+	
 	/**
-	 * Metodo main para probar el codigo
-	 * 
-	 * @param args
+	 * Obtiene el dato del nodo raiz
+	 * @return nodoRaiz nodo raiz
 	 */
-	public static void main(String[] args) {
-		Arbol t = new Arbol();
-
-		ArrayList<Integer> input = new ArrayList<Integer>();
-
-		input.add(70);
-		input.add(84);
-		input.add(85);
-		input.add(78);
-		input.add(80);
-		input.add(76);
-		input.add(49);
-		input.add(54);
-		input.add(51);
-		input.add(37);
-		input.add(40);
-		input.add(22);
-		input.add(15);
-		input.add(26);
-
-		t.insertar(input);
-
-		t.recorrer(t.nodoRaiz);
-
-		System.out.println();
-		System.out.println(t.ancestroCercanoComun(t.nodoRaiz, 15, 49));
+	public Nodo getNodoRaiz() {
+		return nodoRaiz;
 	}
+	
+
 }
